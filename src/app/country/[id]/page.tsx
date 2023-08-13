@@ -1,25 +1,9 @@
 'use client';
 import Navigation from '@/components/Navigation';
-import { Metadata, ResolvingMetadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { AiOutlineArrowLeft } from 'react-icons/ai';
-
-type Props = {
-    params: { id: string };
-    searchParams: { [key: string]: string | string[] | undefined };
-};
-
-export async function generateMetada(
-    { params, searchParams }: Props,
-    parent?: ResolvingMetadata
-): Promise<Metadata> {
-    const id = params.id;
-    return {
-        title: id,
-    };
-}
 
 interface CountryProps {
     flags: { alt: string; png: string; svg: string };
