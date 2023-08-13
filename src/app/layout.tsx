@@ -1,6 +1,6 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { ThemeProvider } from './themeProvider';
+import { ThemeProvider } from './ThemeProvider';
 
 export const metadata: Metadata = {
     title: 'Where in the world',
